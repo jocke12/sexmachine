@@ -59,7 +59,7 @@ module SexMachine
     end
 
     def country_exists?(country)
-      country && COUNTRIES.include?(country) || ISO_3166_MAPPING.include?(country)
+      COUNTRIES.include?(country) || ISO_3166_MAPPING.include?(country)
     end
 
     def get_gender(name, country = nil)
